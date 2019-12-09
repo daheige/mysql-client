@@ -1,5 +1,5 @@
 FROM alpine:3.10
 
-RUN apk add --no-cache mysql-client
+RUN apk update && apk add --no-cache bash mysql-client
 
-ENTRYPOINT ["sh"]
+ENTRYPOINT ["bash"]
